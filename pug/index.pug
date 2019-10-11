@@ -67,7 +67,7 @@ html
 						span.hero__logo Agile #[b Invest] 
 						|  We're financing your success to #[b increase] your mobile growth
 					p.hero__offer #[b What we offer:]  Flexible credit lines for Mobile App Publishers in case if you're experiencing a cash gap caused by stores delayed revenue payouts
-					button.hero__btn.btn Launch my APP
+					button.hero__btn.btn(data-href="#contactus") Launch my APP
 					button.hero__scroll(data-href="#howitworks")
 			section.howItWorks#howitworks
 				.howItWorks__inner
@@ -98,7 +98,7 @@ html
 								.howItWorks__item-pic
 								p.howItWorks__item-caption Cover credit with payouts
 								p.howItWorks__item-text The easiest way to pay down loan balance
-			section.benefits
+			section.benefits#benefits
 				.benefits__pic
 				.benefits__inner
 					p.benefits__logo.benefits__logo--1
@@ -117,7 +117,7 @@ html
 						li.benefits__item
 							p.benefits__item-num 04
 							p.benefits__item-desc Recursive cooperation model allows you to receive credit line #[b whole time untill you grow big enough to cover the gap] with your own funds.
-			section.numbers
+			section.numbers#numbers
 				.numbers__inner
 					h2.numbers__title Numbers:
 					ul.numbers__list
@@ -133,15 +133,15 @@ html
 						li.numbers__item
 							p.numbers__item-value 6m
 							p.numbers__item-desc Maximum credit line #[b period is 6 months]
-			section.about
+			section.about#about
 				.about__inner
 					h2.about__title About us
 					p.about__subtitle Quickly architect client-based opportunities for optimal e-markets. Competently morph worldwide action items rather than seamless core competencies.
 					p.about__text Quickly architect client-based opportunities for optimal e-markets. Competently morph worldwide action items rather than seamless core competencies. Objectively implement sustainable communities through integrated models. Interactively myocardinate viral e-tailers through interdependent metrics. Synergistically engage cross-unit benefits through effective testing procedures.
 					p.about__text Rapidiously evolve holistic ROI after goal-oriented initiatives. Conveniently customize excellent initiatives rather than resource sucking deliverables. Conveniently integrate business testing procedures without market positioning models. Synergistically drive goal-oriented infrastructures without equity invested core competencies. Appropriately.
 					p.about__sign — Agile Invest team —
-					button.about__btn.btn Launch my APP
-			section.reviews
+					button.about__btn.btn(data-href="#contactus") Launch my APP
+			section.reviews#testimonials
 				.reviews__inner
 					.reviews__wrapper
 						ul.reviews__list
@@ -159,8 +159,8 @@ html
 									p.reviews__item-text Quickly architect client-based opportunities for optimal e-markets. Competently morph worldwide action items rather than seamless core competencies.
 									p.reviews__item-name Dave J.
 									p.reviews__item-role Сommercial finance director “My App”
-						button.reviews__btn.btn Launch my APP
-			section.team
+						button.reviews__btn.btn(data-href="#contactus") Launch my APP
+			section.team#team
 				.team__inner
 					h2.team__title Team Leaders
 					ul.team__list
@@ -172,7 +172,7 @@ html
 							img.team__item-ava(src="img/team-ava-2.jpg", alt="Oleg Dronov, CEO, Founder")
 							p.team__item-name Oleg Dronov
 							p.team__item-role CEO, Founder
-			section.contacts
+			section.contacts#contactus
 				.contacts__inner
 					h2.contacts__title Conctact Us
 					.contacts__form
@@ -182,7 +182,7 @@ html
 								input(type="text").form__field
 							.form__group
 								label.form__label E-mail
-								input(type="email").form__field
+								input(type="email", required).form__field
 							.form__group.form__group--textarea
 								label.form__label Your messgae
 								textarea.form__field(rows=5)
@@ -215,7 +215,7 @@ html
 										a(href="#team") Team
 					.footer__bottom
 						p.footer__about Reliable factoring partner for Mobile&nbsp;App&nbsp;Publishers
-						p.footer__copy &copy; #[span.year], Agile Invest. All&nbsp;rights&nbsp;reserved.
+						p.footer__copy &copy; #[span.year], Agile Invest. #[b All&nbsp;rights&nbsp;reserved.]
 
 
 		script(src="js/slick.min.js")

@@ -110,7 +110,7 @@ select
 		transition: opacity .25s
 		width: 100%
 		left: 0
-		nav
+		.nav
 			height: 100%
 			opacity: 0
 			transition: opacity .25s
@@ -361,9 +361,13 @@ h2
 		&--3
 			.howItWorks__item-pic::after
 				content: '\e905'
+				position: relative
+				left: 5px
 		&--4
 			.howItWorks__item-pic::after
 				content: '\e904'
+				position: relative
+				left: 2px
 		&--5
 			.howItWorks__item-pic::after
 				content: '\e903'
@@ -730,6 +734,9 @@ h2
 		margin: 15px 0 60px
 	&__copy
 		margin: 0
+		b
+			display: block
+			font-weight: 400
 
 
 

@@ -42,10 +42,11 @@ var isFocus = function() {
 
 $(function() {
 
-    $('[data-scroll-to]').on('click', function(event) {
+    $('.nav__list a, [data-href]').on('click', function(event) {
         event.preventDefault();
-        var to = $(this).attr('data-scroll-to')
+        var to = $(this).attr('data-href') || $(this).attr('href')
         Util.scrollToEl($(to))
+        _default()
     });
 
     var header = $('.header')

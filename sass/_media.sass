@@ -1,12 +1,132 @@
 @import "bourbon"
 
-
-/* Desktop-frist */
-@media only screen and (max-width : 991px)
-	/**/
-
-
-/* Mobile-first */
 @media only screen and (min-width : 992px)
-	/**/
+	.w-page
+		max-width: none
+	body
+		font-size: 16px
+		line-height: 24px
+	.header
+		padding: 20px 0 0
+		position: relative
+		&__inner
+			max-width: 1920px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+		&__logo
+			width: 200px
+			max-width: none
+			display: inline-block
+			vertical-align: middle
+		&__nav
+			transform: translateY(0)
+			margin-left: auto
+			display: inline-block
+			position: relative
+			left: auto
+			text-align: right
+			margin-top: 15px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			.nav
+				opacity: 1
+				margin: 0
+			li
+				display: inline-block
+			li+li
+				margin-top: 0
+				margin-left: 25px
+			a
+				font-family: $font2
+		&__btn
+			margin: 0
+			margin-left: 25px
+			font-family: $font2
+			display: block
+			margin-left: auto
+			margin-top: 15px
+		&__toggle
+			display: none
+
+	.nav
+		&__list
+			display: inline-block
+
+	.hero
+		&__inner
+			max-width: 1270px
+			padding: 0 20px 260px
+			&::after
+				width: 900px
+				height: 900px
+				right: auto
+				left: 50%
+				top: -600px
+				margin-left: -20px
+				border-radius: 200px
+		&__pic
+			right: auto
+			top: 10px
+			left: 50%
+			max-width: none
+			margin-left: -110px
+		&__who
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 50px
+			max-width: 510px
+		&__logo
+			display: block
+			font-size: 93px
+			line-height: 113px
+			margin-bottom: 20px
+		&__title
+			max-width: 510px
+			font-size: 24px
+			line-height: 30px
+			margin-bottom: 40px
+		&__offer
+			margin-bottom: 50px
+			max-width: 510px
+		&__btn
+			margin: 0
+
+@media only screen and (min-width : 1250px)
+	.header
+		&__nav
+			margin-top: 0
+			display: inline-block
+		&__btn
+			display: inline-block
+			margin-left: 25px
+			
+	.nav
+		display: block
+
+@media only screen and (min-width : 1750px)
+	.header
+		position: absolute
+		&__nav
+			li+li
+				margin-left: 50px
+		&__btn
+			margin-left: 50px
+
+	.hero
+		&__inner
+			padding-top: 40px
+			&::after
+				top: -310px
+				margin-left: 60px
+		&__who
+			margin-bottom: 125px
+		&__pic
+			top: 120px
 
