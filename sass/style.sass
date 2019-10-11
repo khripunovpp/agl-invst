@@ -80,6 +80,8 @@ select
 
 .w-page
 	overflow: hidden
+	max-width: 1920px
+	margin: 0 auto
 
 %square
 	border-radius: 50px
@@ -141,7 +143,7 @@ select
 	&.opened
 		background-color: $color
 		position: fixed
-		z-index: 2
+		z-index: 6
 		top: 0
 		left: 0
 		width: 100%
@@ -195,7 +197,7 @@ select
 	letter-spacing: 0.03em
 	text-transform: uppercase
 	color: #fff
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), $color
+	background-color: $color
 	border-radius: 10px
 	border: none
 	box-shadow: 0px 15px 35px rgba(12, 114, 241, 0.3)
@@ -497,7 +499,7 @@ h2
 
 
 .about
-	padding-bottom: 120px
+	padding-bottom: 70px
 	&__inner
 		@extend %container
 	&__title
@@ -521,9 +523,78 @@ h2
 
 
 
-
-
-
+.reviews
+	&__btn
+		display: none
+	&__inner
+		@extend %container
+	&__list
+		padding-bottom: 55px
+		.slick-next,
+		.slick-prev
+			font-size: 0
+			padding: 0
+			background-color: transparent
+			border: none
+			position: absolute
+			bottom: 0
+			transition: all .2s
+			&::before
+				@extend %icon
+				font-size: 23px
+				color: $color
+		.slick-next
+			left: 50%
+			margin-left: 22px
+			&:hover
+				transform: translateX(10px)
+		.slick-prev
+			right: 50%
+			margin-right: 22px
+			&:hover
+				transform: translateX(-10px)
+		.slick-next::before
+			content: '\e900'
+		.slick-prev::before
+			content: '\e900'
+			display: inline-block
+			transform: scale(-1,1)
+	&__item
+		padding-top: 50px
+		&-inner
+			background-color: $color
+			color: #fff
+			padding: 80px 20px 50px
+			text-align: center
+			position: relative
+		&-pic
+			overflow: hidden
+			position: absolute
+			border-radius: 15px
+			width: 75px
+			height: 75px
+			transform: rotate(45deg)
+			top: -38px
+			left: 50%
+			margin-left: -38px
+			img
+				max-width: 100px
+				transform: rotate(-45deg)
+				position: absolute
+				top: -10px
+				left: -10px
+		&-text
+			font-size: 20px
+			line-height: 24px
+			margin: 0 0 30px
+			font-family: $font2
+		&-name
+			font-family: $font2
+			font-size: 20px
+			line-height: 24px
+			margin: 0 0 5px
+		&-role
+			margin: 0
 
 
 

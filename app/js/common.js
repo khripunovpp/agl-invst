@@ -56,5 +56,6 @@ $(function() {
         }
     });
 
+    $('.reviews__list').slick()
 
 });
