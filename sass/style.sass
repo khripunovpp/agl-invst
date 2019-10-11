@@ -137,6 +137,8 @@ select
 		background-color: transparent
 		margin: 35px 0 50px
 		padding: 9px 25px
+		cursor: pointer
+		transition: all .2s
 		&:hover
 			background-color: #fff
 			color: $color
@@ -248,6 +250,8 @@ select
 			margin-bottom: 5px
 	&__scroll
 		display: none
+		&::before
+			@extend %icon
 
 .hamburger
 	display: inline-block
@@ -371,6 +375,9 @@ h2
 		&--5
 			.howItWorks__item-pic::after
 				content: '\e903'
+		&::before
+			@extend %icon
+			display: none
 
 .benefits
 	background-color: $color
@@ -492,10 +499,11 @@ h2
 			line-height: 52px
 			font-family: $font2
 			color: #fff
-			margin: 0
+			margin: 0 0 5px
 		&-desc
 			color: #B6D4FB
 			font-family: $font2
+			margin: 0
 			b
 				color: #fff
 		&+&
