@@ -638,7 +638,72 @@ h2
 
 
 
+.contacts
+	padding: 0 20px
+	&__inner
+		@extend %container
+		background-color: $color
+		padding: 30px 20px 40px
+	&__title
+		text-align: center
+		color: #fff
+		margin-bottom: 30px
 
+.form
+	background-color: $color
+	&__group
+		border: 2px solid #FFFFFF
+		border-radius: 10px
+		position: relative
+		&+&
+			margin-top: 20px
+		&--textarea
+			background-color: #fff
+			.form__label,
+			.form__field
+				color: $color
+		&.onfocus
+			.form__label
+				transform: scale(.7) translateY(-15px)
+				opacity: 1
+	&__field
+		padding: 18px 20px 8px
+		background-color: transparent
+		border: none
+		width: 100%
+		color: #fff
+		font-family: $font2
+	&__label
+		font-size: 14px
+		line-height: 1
+		font-family: $font2
+		color: #fff
+		position: absolute
+		left: 20px
+		top: 15px
+		opacity: .5
+		cursor: pointer
+		transition: all .2s
+		transform-origin: top left
+		&:hover
+			opacity: 1
+	&__btn
+		border: 2px solid #FFFFFF
+		background-color: transparent
+		font-size: 16px
+		line-height: 19px
+		padding: 8px 15px
+		font-family: $font2
+		color: #fff
+		border-radius: 10px
+		cursor: pointer
+		margin: 30px auto 0
+		min-width: 130px
+		display: block
+		transition: all .2s
+		&:hover
+			background-color: #fff
+			color: $color
 
 
 

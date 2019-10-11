@@ -102,7 +102,7 @@ select {
   font-family: "ProximaNova-Regular", sans-serif;
 }
 
-.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner, .team__inner {
+.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner, .team__inner, .contacts__inner {
   width: 100%;
   max-width: 480px;
   padding: 0 20px;
@@ -938,6 +938,105 @@ h2 {
 .team__item:nth-child(even)::after {
   right: -38px;
   top: -20px;
+}
+
+.contacts {
+  padding: 0 20px;
+}
+
+.contacts__inner {
+  background-color: #0C72F1;
+  padding: 30px 20px 40px;
+}
+
+.contacts__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.form {
+  background-color: #0C72F1;
+}
+
+.form__group {
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form__group + .form__group {
+  margin-top: 20px;
+}
+
+.form__group--textarea {
+  background-color: #fff;
+}
+
+.form__group--textarea .form__label,
+.form__group--textarea .form__field {
+  color: #0C72F1;
+}
+
+.form__group.onfocus .form__label {
+  -webkit-transform: scale(0.7) translateY(-15px);
+  -ms-transform: scale(0.7) translateY(-15px);
+  transform: scale(0.7) translateY(-15px);
+  opacity: 1;
+}
+
+.form__field {
+  padding: 18px 20px 8px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-family: "ProximaNova-Bold", sans-serif;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 1;
+  font-family: "ProximaNova-Bold", sans-serif;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  opacity: .5;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.form__label:hover {
+  opacity: 1;
+}
+
+.form__btn {
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 8px 15px;
+  font-family: "ProximaNova-Bold", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 30px auto 0;
+  min-width: 130px;
+  display: block;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.form__btn:hover {
+  background-color: #fff;
+  color: #0C72F1;
 }
 
 /* Desktop-frist */

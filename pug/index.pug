@@ -172,7 +172,22 @@ html
 							img.team__item-ava(src="img/team-ava-2.jpg", alt="Oleg Dronov, CEO, Founder")
 							p.team__item-name Oleg Dronov
 							p.team__item-role CEO, Founder
-						
+			section.contacts
+				.contacts__inner
+					h2.contacts__title Conctact Us
+					.contacts__form
+						form.form
+							.form__group
+								label.form__label Name
+								input(type="text").form__field
+							.form__group
+								label.form__label E-mail
+								input(type="email").form__field
+							.form__group.form__group--textarea
+								label.form__label Your messgae
+								textarea.form__field(rows=5)
+							button.form__btn Send
+
 
 		script(src="js/slick.min.js")
 		script(src="js/common.js")
