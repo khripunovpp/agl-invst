@@ -101,7 +101,7 @@ select {
   font-family: "ProximaNova-Regular", sans-serif;
 }
 
-.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner {
+.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner {
   width: 100%;
   max-width: 480px;
   padding: 0 20px;
@@ -486,6 +486,7 @@ h2 {
   font-size: 33px;
   line-height: 40px;
   margin: 0;
+  font-family: "ProximaNova-Bold", sans-serif;
 }
 
 .howItWorks {
@@ -731,6 +732,39 @@ h2 {
 
 .numbers__item + .numbers__item {
   margin-top: 30px;
+}
+
+.about {
+  padding-bottom: 120px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "ProximaNova-Bold", sans-serif;
+  margin: 0 0 30px;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.about__text + .about__text {
+  margin-top: 20px;
+}
+
+.about__sign {
+  display: none;
+}
+
+.about__btn {
+  margin-top: 70px;
 }
 
 /* Desktop-frist */
