@@ -101,7 +101,7 @@ select {
   font-family: "ProximaNova-Regular", sans-serif;
 }
 
-.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner {
+.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner {
   width: 100%;
   max-width: 480px;
   padding: 0 20px;
@@ -112,7 +112,7 @@ select {
   overflow: hidden;
 }
 
-.hero__inner::after {
+.hero__inner::after, .numbers__list::after {
   border-radius: 50px;
   background-color: #0C72F1;
   position: absolute;
@@ -561,7 +561,7 @@ h2 {
 
 .benefits {
   background-color: #0C72F1;
-  padding: 45px 0;
+  padding: 45px 0 70px;
   text-align: center;
   position: relative;
   margin-top: 300px;
@@ -636,6 +636,100 @@ h2 {
 }
 
 .benefits__item + .benefits__item {
+  margin-top: 30px;
+}
+
+.numbers {
+  text-align: center;
+  margin-bottom: 215px;
+  position: relative;
+}
+
+.numbers::after {
+  position: absolute;
+  content: '';
+  height: 145px;
+  width: 50%;
+  left: 0;
+  bottom: -145px;
+  background-color: #0C72F1;
+}
+
+.numbers__inner {
+  background-color: #0C72F1;
+  position: relative;
+}
+
+.numbers__inner::after, .numbers__inner::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  background-color: #0C72F1;
+}
+
+.numbers__inner::after {
+  left: 100%;
+}
+
+.numbers__inner::before {
+  right: 100%;
+}
+
+.numbers__title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.numbers__list {
+  position: relative;
+}
+
+.numbers__list::after, .numbers__list::before {
+  content: '';
+  position: absolute;
+}
+
+.numbers__list::after {
+  left: 50%;
+  margin-left: -140px;
+  bottom: -108px;
+  width: 280px;
+  height: 280px;
+}
+
+.numbers__list::before {
+  background-color: #fff;
+  bottom: -280px;
+  left: 50%;
+  margin-left: 275px;
+  z-index: 1;
+  width: 550px;
+  height: 550px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.numbers__item-value {
+  font-size: 43px;
+  line-height: 52px;
+  font-family: "ProximaNova-Bold", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+.numbers__item-desc {
+  color: #B6D4FB;
+  font-family: "ProximaNova-Bold", sans-serif;
+}
+
+.numbers__item-desc b {
+  color: #fff;
+}
+
+.numbers__item + .numbers__item {
   margin-top: 30px;
 }
 

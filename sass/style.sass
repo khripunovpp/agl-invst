@@ -367,7 +367,7 @@ h2
 
 .benefits
 	background-color: $color
-	padding: 45px 0
+	padding: 45px 0 70px
 	text-align: center
 	position: relative
 	margin-top: 300px
@@ -425,6 +425,74 @@ h2
 		&+&
 			margin-top: 30px
 
+
+.numbers
+	text-align: center
+	margin-bottom: 215px
+	position: relative
+	&::after
+		position: absolute
+		content: ''
+		height: 145px
+		width: 50%
+		left: 0
+		bottom: -145px
+		background-color: $color
+	&__inner
+		@extend %container
+		background-color: $color
+		position: relative
+		&::after,
+		&::before
+			content: ''
+			position: absolute
+			width: 500px
+			height: 100%
+			top: 0
+			background-color: $color
+		&::after
+			left: 100%
+		&::before
+			right: 100%
+	&__title
+		color: #fff
+		margin-bottom: 30px
+	&__list
+		position: relative
+		&::after,
+		&::before
+			content: ''
+			position: absolute
+		&::after
+			left: 50%
+			margin-left: -140px
+			bottom: -108px
+			width: 280px
+			height: 280px
+			@extend %square
+		&::before
+			background-color: #fff
+			bottom: -280px
+			left: 50%
+			margin-left: 275px
+			z-index: 1
+			width: 550px
+			height: 550px
+			transform: rotate(45deg)
+	&__item
+		&-value
+			font-size: 43px
+			line-height: 52px
+			font-family: $font2
+			color: #fff
+			margin: 0
+		&-desc
+			color: #B6D4FB
+			font-family: $font2
+			b
+				color: #fff
+		&+&
+			margin-top: 30px
 
 
 
