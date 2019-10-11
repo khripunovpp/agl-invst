@@ -102,7 +102,7 @@ select {
   font-family: "ProximaNova-Regular", sans-serif;
 }
 
-.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner {
+.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner, .team__inner {
   width: 100%;
   max-width: 480px;
   padding: 0 20px;
@@ -881,6 +881,63 @@ h2 {
 
 .reviews__item-role {
   margin: 0;
+}
+
+.team {
+  padding: 100px 0 70px;
+  text-align: center;
+}
+
+.team__title {
+  margin-bottom: 30px;
+}
+
+.team__item {
+  position: relative;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.team__item::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 15px;
+  width: 75px;
+  height: 75px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0C72F1;
+}
+
+.team__item-ava {
+  max-width: 180px;
+}
+
+.team__item-name {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0 5px;
+}
+
+.team__item-role {
+  margin: 0;
+}
+
+.team__item + .team__item {
+  margin-top: 40px;
+}
+
+.team__item:nth-child(odd)::after {
+  left: -38px;
+  top: 170px;
+}
+
+.team__item:nth-child(even)::after {
+  right: -38px;
+  top: -20px;
 }
 
 /* Desktop-frist */
