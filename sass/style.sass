@@ -640,6 +640,8 @@ h2
 
 .contacts
 	padding: 0 20px
+	position: relative
+	z-index: 1
 	&__inner
 		@extend %container
 		background-color: $color
@@ -704,6 +706,32 @@ h2
 		&:hover
 			background-color: #fff
 			color: $color
+
+
+
+
+.footer
+	background-color: $color2
+	margin-top: -200px
+	padding-top: 250px
+	padding-bottom: 40px
+	&__inner
+		@extend %container
+	&__nav
+		display: none
+	&__logo
+		max-width: 125px
+		margin: 0 auto
+	&__about,
+	&__copy
+		color: #888EAF
+		text-align: center
+	&__about
+		margin: 15px 0 60px
+	&__copy
+		margin: 0
+
+
 
 
 

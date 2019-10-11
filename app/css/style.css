@@ -102,7 +102,7 @@ select {
   font-family: "ProximaNova-Regular", sans-serif;
 }
 
-.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner, .team__inner, .contacts__inner {
+.container, .header__inner, .hero__inner, .howItWorks__inner, .benefits__inner, .numbers__inner, .about__inner, .reviews__inner, .team__inner, .contacts__inner, .footer__inner {
   width: 100%;
   max-width: 480px;
   padding: 0 20px;
@@ -942,6 +942,8 @@ h2 {
 
 .contacts {
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts__inner {
@@ -1037,6 +1039,35 @@ h2 {
 .form__btn:hover {
   background-color: #fff;
   color: #0C72F1;
+}
+
+.footer {
+  background-color: #121E5F;
+  margin-top: -200px;
+  padding-top: 250px;
+  padding-bottom: 40px;
+}
+
+.footer__nav {
+  display: none;
+}
+
+.footer__logo {
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+.footer__about, .footer__copy {
+  color: #888EAF;
+  text-align: center;
+}
+
+.footer__about {
+  margin: 15px 0 60px;
+}
+
+.footer__copy {
+  margin: 0;
 }
 
 /* Desktop-frist */

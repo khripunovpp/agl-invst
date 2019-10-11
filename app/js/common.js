@@ -86,4 +86,6 @@ $(function() {
 
     $('.reviews__list').slick()
     isFocus()
+
+    $('.year').text(new Date().getFullYear())
 });
