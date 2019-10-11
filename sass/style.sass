@@ -313,8 +313,10 @@ h2
 	margin: 0
 
 .howItWorks
-	padding: 70px 0
+	padding: 70px 0 0
 	text-align: center
+	position: relative
+	z-index: 2
 	&__inner
 		@extend %container
 	&__title
@@ -363,7 +365,65 @@ h2
 			.howItWorks__item-pic::after
 				content: '\e903'
 
-
+.benefits
+	background-color: $color
+	padding: 45px 0
+	text-align: center
+	position: relative
+	margin-top: 300px
+	&::before
+		content: ''
+		position: absolute
+		width: 1000px
+		height: 1000px
+		top: -650px
+		left: 50%
+		margin-left: -500px
+		background-image: linear-gradient(135deg, #ffffff 50%, $color 50%)
+	&__inner
+		@extend %container
+		position: relative
+		z-index: 1
+	&__pic
+		position: absolute
+		height: 236px
+		top: -245px
+		width: 100%
+		background-image: url(../img/benefits-pic.png)
+		background-position: 50% 50%
+	&__title
+		margin-bottom: 40px
+		color: #fff
+	&__item
+		&-num
+			font-size: 20px
+			line-height: 70px
+			color: $color2
+			position: relative
+			opacity: .99
+			font-family: $font2
+			margin: 0
+			&::after
+				content: ''
+				position: absolute
+				z-index: -1
+				top: 50%
+				left: 50%
+				margin-left: -25px
+				margin-top: -25px
+				width: 50px
+				height: 50px
+				background-color: #fff
+				border-radius: 8px
+				transform: rotate(45deg)
+		&-desc
+			color: #B6D4FB
+			font-family: $font2
+			margin: 15px 0 0
+			b
+				color: #fff
+		&+&
+			margin-top: 30px
 
 
 
