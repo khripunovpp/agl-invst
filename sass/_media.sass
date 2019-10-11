@@ -2,7 +2,6 @@
 
 @media only screen and (min-width : 992px)
 	.w-page
-		max-width: none
 	body
 		font-size: 16px
 		line-height: 24px
@@ -123,9 +122,14 @@
 				content: '\e902'
 				color: $color
 				font-size: 15px
+				display: inline-block
+				transition: all .2s
+			&:hover
+				&::before
+					transform: translateY(10px)
 
 	.howItWorks
-		padding: 100px 0
+		padding: 100px 0 0 
 		&__inner
 			max-width: 1100px
 		&__title
@@ -166,6 +170,79 @@
 					margin-left: 55px
 					top: 65px
 
+	.benefits
+		margin-top: 1000px
+		background-color: transparent
+		text-align: left
+		padding: 0
+		&::before
+			width: 2000px
+			height: 2000px
+			margin-left: -1000px
+			top: -1510px
+		&__inner
+			max-width: 1100px
+		&__pic
+			height: 622px
+			background-image: url(../img/benefits-pic-desc.png)
+			top: -830px
+			background-position: 45% 50%
+			width: 2000px
+			left: 50%
+			margin-left: -1000px
+		&__title
+			transform: rotate(-45deg)
+			margin-bottom: 50px
+			display: table
+		&__logo
+			display: block
+			position: absolute
+			z-index: 2
+			transform: rotate(-45deg)
+			font-size: 133px
+			line-height: 1
+			width: 405px
+			font-family: $font2
+			margin: 0
+			&--1
+				color: $color
+				top: -210px
+				left: -350px
+				text-align: right
+			&--2
+				color: #fff
+				top: -1088px
+				right: -358px
+				text-align: left
+		&__item
+			position: relative
+			padding-left: 95px
+			&+&
+				margin-top: 90px
+			&:nth-child(odd)
+				margin-left: 45%
+			&:nth-child(even)
+				margin-right: 45%
+			&-num
+				position: absolute
+				font-size: 24px
+				left: 95px
+				transform: translateX(-90px)
+				top: -20px
+				&::after
+					width: 60px
+					height: 60px
+					margin-top: -30px
+					margin-left: -30px
+				
+			&-desc
+				font-size: 24px
+				line-height: 34px
+
+	.numbers
+		padding-top: 730px
+		background-color: $color
+		margin-top: -470px
 
 	h2
 		font-size: 63px
