@@ -396,6 +396,8 @@
 	.reviews
 		&__inner
 			max-width: 920px
+			padding-left: 0
+			padding-right: 0
 		&__item
 			padding-top: 110px
 			&-inner
@@ -433,20 +435,66 @@
 				font-size: 24px
 				line-height: 30px	
 		&__list
-			padding-bottom: 70px
+			padding-bottom: 100px
 			.slick-prev,
 			.slick-next
-				bottom: calc(50% - 31px)
-			.slick-prev
-				right: auto
-				margin-right: 0
-				left: -50px
-			.slick-next
-				left: auto
-				margin-left: 0
-				right: -50px
+				bottom: 35px
 		&__btn
 			display: block
+
+	.team
+		padding: 150px 0 300px
+		position: relative
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			width: 680px
+			height: 680px
+			border-radius: 140px
+			background-color: $color
+			z-index: -1
+			transform: rotate(45deg)
+		&::before
+			left: 50%
+			margin-left: -1480px
+			top: 30px
+		&::after
+			right: 50%
+			margin-right: -1480px
+			top: -315px
+		&__inner
+			max-width: 1100px
+		&__title
+			margin-bottom: 60px
+		&__list
+			margin: 0 -60px
+		&__item
+			max-width: 400px
+			display: inline-block
+			margin: 0 60px
+			font-size: 0
+			&-ava
+				max-width: 400px
+			&-name
+				font-size: 24px
+				line-height: 30px
+			&-role
+				font-size: 16px
+				line-height: 24px
+			&::after,
+			&::before
+				width: 160px
+				height: 160px
+				border-radius: 35px
+			&:nth-child(odd)::after
+				left: -90px
+				top: 367px
+			&:nth-child(even)::after
+				right: -90px
+				top: -27px
+
+
 
 @media only screen and (min-width : 1250px)
 	.header
@@ -462,9 +510,16 @@
 
 	.reviews
 		&__list
+			.slick-prev,
+			.slick-next
+				bottom: calc(50% - 31px)
 			.slick-prev
+				right: auto
+				margin-right: 0
 				left: -100px
 			.slick-next
+				left: auto
+				margin-left: 0
 				right: -100px
 
 @media only screen and (min-width : 1750px)

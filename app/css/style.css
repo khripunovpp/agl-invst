@@ -1585,6 +1585,8 @@ h2 {
   }
   .reviews__inner {
     max-width: 920px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .reviews__item {
     padding-top: 110px;
@@ -1633,25 +1635,79 @@ h2 {
     line-height: 30px;
   }
   .reviews__list {
-    padding-bottom: 70px;
+    padding-bottom: 100px;
   }
   .reviews__list .slick-prev,
   .reviews__list .slick-next {
-    bottom: -webkit-calc(50% - 31px);
-    bottom: calc(50% - 31px);
-  }
-  .reviews__list .slick-prev {
-    right: auto;
-    margin-right: 0;
-    left: -50px;
-  }
-  .reviews__list .slick-next {
-    left: auto;
-    margin-left: 0;
-    right: -50px;
+    bottom: 35px;
   }
   .reviews__btn {
     display: block;
+  }
+  .team {
+    padding: 150px 0 300px;
+    position: relative;
+  }
+  .team::before, .team::after {
+    content: '';
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    border-radius: 140px;
+    background-color: #0C72F1;
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .team::before {
+    left: 50%;
+    margin-left: -1480px;
+    top: 30px;
+  }
+  .team::after {
+    right: 50%;
+    margin-right: -1480px;
+    top: -315px;
+  }
+  .team__inner {
+    max-width: 1100px;
+  }
+  .team__title {
+    margin-bottom: 60px;
+  }
+  .team__list {
+    margin: 0 -60px;
+  }
+  .team__item {
+    max-width: 400px;
+    display: inline-block;
+    margin: 0 60px;
+    font-size: 0;
+  }
+  .team__item-ava {
+    max-width: 400px;
+  }
+  .team__item-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .team__item-role {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team__item::after, .team__item::before {
+    width: 160px;
+    height: 160px;
+    border-radius: 35px;
+  }
+  .team__item:nth-child(odd)::after {
+    left: -90px;
+    top: 367px;
+  }
+  .team__item:nth-child(even)::after {
+    right: -90px;
+    top: -27px;
   }
 }
 
@@ -1667,10 +1723,19 @@ h2 {
   .nav {
     display: block;
   }
+  .reviews__list .slick-prev,
+  .reviews__list .slick-next {
+    bottom: -webkit-calc(50% - 31px);
+    bottom: calc(50% - 31px);
+  }
   .reviews__list .slick-prev {
+    right: auto;
+    margin-right: 0;
     left: -100px;
   }
   .reviews__list .slick-next {
+    left: auto;
+    margin-left: 0;
     right: -100px;
   }
 }
