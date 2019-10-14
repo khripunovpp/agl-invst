@@ -494,6 +494,42 @@
 				right: -90px
 				top: -27px
 
+	.contacts
+		&__inner
+			max-width: 920px
+			padding: 40px 315px 65px 50px
+			position: relative
+			&::after
+				content: ''
+				width: 497px
+				height: 624px
+				background-image: url(../img/contacts-pic-desc.png)
+				position: absolute
+				right: -200px
+				top: 50%
+				margin-top: -312px
+		&__title
+			text-align: left
+
+	.form
+		font-size: 0
+		overflow: hidden
+		&__group
+			float: left
+			width: calc(50% - 15px)
+			&+&
+				margin-top: 0
+				margin-left: 30px
+				margin-bottom: 30px
+			&--textarea
+				float: none
+				width: 100%
+				clear: both
+				margin: 0 !important
+		&__btn
+			margin-left: 0
+			margin-right: 0
+
 
 
 @media only screen and (min-width : 1250px)

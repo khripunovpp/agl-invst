@@ -1709,6 +1709,48 @@ h2 {
     right: -90px;
     top: -27px;
   }
+  .contacts__inner {
+    max-width: 920px;
+    padding: 40px 315px 65px 50px;
+    position: relative;
+  }
+  .contacts__inner::after {
+    content: '';
+    width: 497px;
+    height: 624px;
+    background-image: url(../img/contacts-pic-desc.png);
+    position: absolute;
+    right: -200px;
+    top: 50%;
+    margin-top: -312px;
+  }
+  .contacts__title {
+    text-align: left;
+  }
+  .form {
+    font-size: 0;
+    overflow: hidden;
+  }
+  .form__group {
+    float: left;
+    width: -webkit-calc(50% - 15px);
+    width: calc(50% - 15px);
+  }
+  .form__group + .form__group {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .form__group--textarea {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin: 0 !important;
+  }
+  .form__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
