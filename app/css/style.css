@@ -1304,16 +1304,18 @@ h2 {
     top: 65px;
   }
   .benefits {
-    margin-top: 1000px;
-    background-color: transparent;
+    margin-top: -480px;
+    padding-top: 1480px;
     text-align: left;
-    padding: 0;
+    padding-bottom: 0;
   }
   .benefits::before {
     width: 2000px;
     height: 2000px;
     margin-left: -1000px;
-    top: -1510px;
+    top: 0;
+    background-image: -o-linear-gradient(315deg, #ffffff 50%, transparent 50%);
+    background-image: linear-gradient(135deg, #ffffff 50%, transparent 50%);
   }
   .benefits__inner {
     max-width: 1100px;
@@ -1321,7 +1323,7 @@ h2 {
   .benefits__pic {
     height: 622px;
     background-image: url(../img/benefits-pic-desc.png);
-    top: -830px;
+    top: 670px;
     background-position: 45% 50%;
     width: 2000px;
     left: 50%;
@@ -1331,7 +1333,7 @@ h2 {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    margin-bottom: 50px;
+    margin-bottom: 0;
     display: table;
   }
   .benefits__logo {
@@ -1355,16 +1357,17 @@ h2 {
   }
   .benefits__logo--2 {
     color: #fff;
-    top: -1088px;
-    right: -358px;
+    top: -1058px;
+    right: -374px;
     text-align: left;
   }
   .benefits__item {
     position: relative;
     padding-left: 95px;
+    min-height: 200px;
   }
   .benefits__item + .benefits__item {
-    margin-top: 90px;
+    margin-top: 45px;
   }
   .benefits__item:nth-child(odd) {
     margin-left: 45%;
@@ -1387,14 +1390,126 @@ h2 {
     margin-top: -30px;
     margin-left: -30px;
   }
+  .benefits__item-num::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+    background-color: #121E5F;
+    opacity: .1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    right: -15px;
+  }
   .benefits__item-desc {
     font-size: 24px;
     line-height: 34px;
   }
   .numbers {
-    padding-top: 730px;
     background-color: #0C72F1;
-    margin-top: -470px;
+    padding: 280px 0 173px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .numbers::after {
+    width: 1380px;
+    height: 1380px;
+    background-color: #0C72F1;
+    border-radius: 260px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 178px;
+    left: 50%;
+    margin-left: -570px;
+  }
+  .numbers::before {
+    content: '';
+    width: 810px;
+    height: 810px;
+    background-image: -o-linear-gradient(135deg, #fff 50%, transparent 50%);
+    background-image: linear-gradient(-45deg, #fff 50%, transparent 50%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .numbers__inner {
+    max-width: 1100px;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .numbers__inner::before, .numbers__inner::after {
+    width: 680px;
+    height: 680px;
+    background-color: #fff;
+    border-radius: 130px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .numbers__inner::before {
+    top: 180px;
+    left: -980px;
+  }
+  .numbers__inner::after {
+    top: -540px;
+    right: -980px;
+    left: auto;
+  }
+  .numbers__title {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+    display: table;
+  }
+  .numbers__list::before, .numbers__list::after {
+    display: none;
+  }
+  .numbers__item {
+    position: relative;
+    padding-left: 95px;
+    min-height: 210px;
+  }
+  .numbers__item + .numbers__item {
+    margin-top: 50px;
+  }
+  .numbers__item:nth-child(odd) {
+    margin-left: 40%;
+  }
+  .numbers__item:nth-child(even) {
+    margin-right: 45%;
+    margin-left: 5%;
+  }
+  .numbers__item-value {
+    font-size: 93px;
+    line-height: 113px;
+  }
+  .numbers__item-value::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+    background-color: #fff;
+    opacity: .1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 32px;
+    left: 0;
+  }
+  .numbers__item-desc {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: auto;
+  }
+  .about {
+    padding-top: 200px;
   }
   h2 {
     font-size: 63px;

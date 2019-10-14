@@ -171,28 +171,29 @@
 					top: 65px
 
 	.benefits
-		margin-top: 1000px
-		background-color: transparent
+		margin-top: -480px
+		padding-top: 1480px
 		text-align: left
-		padding: 0
+		padding-bottom: 0
 		&::before
 			width: 2000px
 			height: 2000px
 			margin-left: -1000px
-			top: -1510px
+			top: 0
+			background-image: linear-gradient(135deg, #ffffff 50%, transparent 50%)
 		&__inner
 			max-width: 1100px
 		&__pic
 			height: 622px
 			background-image: url(../img/benefits-pic-desc.png)
-			top: -830px
+			top: 670px
 			background-position: 45% 50%
 			width: 2000px
 			left: 50%
 			margin-left: -1000px
 		&__title
 			transform: rotate(-45deg)
-			margin-bottom: 50px
+			margin-bottom: 0
 			display: table
 		&__logo
 			display: block
@@ -211,14 +212,15 @@
 				text-align: right
 			&--2
 				color: #fff
-				top: -1088px
-				right: -358px
+				top: -1058px
+				right: -374px
 				text-align: left
 		&__item
 			position: relative
 			padding-left: 95px
+			min-height: 200px
 			&+&
-				margin-top: 90px
+				margin-top: 45px
 			&:nth-child(odd)
 				margin-left: 45%
 			&:nth-child(even)
@@ -234,15 +236,102 @@
 					height: 60px
 					margin-top: -30px
 					margin-left: -30px
-				
+				&::before
+					content: ''
+					position: absolute
+					z-index: -1
+					width: 160px
+					height: 160px
+					border-radius: 30px
+					background-color: $color2
+					opacity: .1
+					transform: rotate(45deg)
+					top: 0
+					right: -15px
 			&-desc
 				font-size: 24px
 				line-height: 34px
 
 	.numbers
-		padding-top: 730px
 		background-color: $color
-		margin-top: -470px
+		padding: 280px 0 173px
+		margin-bottom: 0
+		text-align: left
+		&::after
+			width: 1380px
+			height: 1380px
+			background-color: $color
+			border-radius: 260px
+			transform: rotate(-45deg)
+			bottom: 178px
+			left: 50%
+			margin-left: -570px
+		&::before
+			content: ''
+			width: 810px
+			height: 810px
+			background-image: linear-gradient(-45deg, #fff 50%, transparent 50%)
+			position: absolute
+			bottom: 0
+			right: 0
+		&__inner
+			max-width: 1100px
+			z-index: 1
+			background-color: transparent
+			&::before,
+			&::after
+				width: 680px
+				height: 680px
+				background-color: #fff
+				border-radius: 130px
+				transform: rotate(45deg)
+			&::before
+				top: 180px
+				left: -980px
+			&::after
+				top: -540px
+				right: -980px
+				left: auto
+		&__title
+			transform: rotate(-45deg)
+			margin-bottom: 0
+			display: table
+		&__list
+			&::before,
+			&::after
+				display: none
+		&__item
+			position: relative
+			padding-left: 95px
+			min-height: 210px
+			&+&
+				margin-top: 50px
+			&:nth-child(odd)
+				margin-left: 40%
+			&:nth-child(even)
+				margin-right: 45%
+				margin-left: 5%
+			&-value
+				font-size: 93px
+				line-height: 113px
+				&::before
+					content: ''
+					position: absolute
+					width: 160px
+					height: 160px
+					border-radius: 30px
+					background-color: #fff
+					opacity: .1
+					transform: rotate(45deg)
+					top: 32px
+					left: 0
+			&-desc
+				font-size: 24px
+				line-height: 34px
+				margin-top: auto
+
+	.about
+		padding-top: 200px
 
 	h2
 		font-size: 63px
