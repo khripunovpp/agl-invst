@@ -69,9 +69,9 @@ html
 					p.hero__offer #[b What we offer:]  Flexible credit lines for Mobile App Publishers in case if you're experiencing a cash gap caused by stores delayed revenue payouts
 					button.hero__btn.btn(data-href="#contactus") Launch my APP
 					button.hero__scroll(data-href="#howitworks")
-			section.howItWorks#howitworks
+			section.howItWorks
 				.howItWorks__inner
-					h2.howItWorks__title How it works
+					h2.howItWorks__title#howitworks How it works
 					.howItWorks__section
 						p.howItWorks__caption Stage 01:
 						ul.howItWorks__list
@@ -98,12 +98,12 @@ html
 								.howItWorks__item-pic
 								p.howItWorks__item-caption Cover credit with payouts
 								p.howItWorks__item-text The easiest way to pay down loan balance
-			section.benefits#benefits
+			section.benefits
 				.benefits__pic
 				.benefits__inner
 					p.benefits__logo.benefits__logo--1 Agile Invest
 					p.benefits__logo.benefits__logo--2 Agile Invest
-					h2.benefits__title Benefits:
+					h2.benefits__title#benefits Benefits:
 					ul.benefits__list
 						li.benefits__item
 							p.benefits__item-num 01
@@ -117,9 +117,9 @@ html
 						li.benefits__item
 							p.benefits__item-num 04
 							p.benefits__item-desc Recursive cooperation model allows you to receive credit line #[b whole time untill you grow big enough to cover the gap] with your own funds.
-			section.numbers#numbers
+			section.numbers
 				.numbers__inner
-					h2.numbers__title Numbers:
+					h2.numbers__title#numbers Numbers:
 					ul.numbers__list
 						li.numbers__item
 							p.numbers__item-value $10k
@@ -133,9 +133,9 @@ html
 						li.numbers__item
 							p.numbers__item-value 6m
 							p.numbers__item-desc Maximum credit line #[b period is 6 months]
-			section.about#about
+			section.about
 				.about__inner
-					h2.about__title About us
+					h2.about__title#about About us
 					p.about__subtitle Quickly architect client-based opportunities for optimal e-markets. Competently morph worldwide action items rather than seamless core competencies.
 					p.about__text Quickly architect client-based opportunities for optimal e-markets. Competently morph worldwide action items rather than seamless core competencies. Objectively implement sustainable communities through integrated models. Interactively myocardinate viral e-tailers through interdependent metrics. Synergistically engage cross-unit benefits through effective testing procedures.
 					p.about__text Rapidiously evolve holistic ROI after goal-oriented initiatives. Conveniently customize excellent initiatives rather than resource sucking deliverables. Conveniently integrate business testing procedures without market positioning models. Synergistically drive goal-oriented infrastructures without equity invested core competencies. Appropriately.
@@ -160,9 +160,9 @@ html
 									p.reviews__item-name Dave J.
 									p.reviews__item-role Сommercial finance director “My App”
 						button.reviews__btn.btn(data-href="#contactus") Launch my APP
-			section.team#team
+			section.team
 				.team__inner
-					h2.team__title Team Leaders
+					h2.team__title#team Team Leaders
 					ul.team__list
 						li.team__item
 							img.team__item-ava(src="img/team-ava-1.jpg", alt="Alex Grus, CEO, Founder")
@@ -216,6 +216,7 @@ html
 					.footer__bottom
 						p.footer__about Reliable factoring partner for Mobile&nbsp;App&nbsp;Publishers
 						p.footer__copy &copy; #[span.year], Agile Invest. #[b All&nbsp;rights&nbsp;reserved.]
-						
+
+		script(src="js/picturefill.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/common.js")

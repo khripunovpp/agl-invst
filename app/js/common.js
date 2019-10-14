@@ -71,7 +71,7 @@ $(function() {
         var to = $(this).attr('href')
         Util.scrollToEl($(to))
         if ($(window).width() < 991) {
-            _toggle()
+            _default()
         }
     });
 
@@ -80,7 +80,6 @@ $(function() {
         if ($(window).width() > 991) {
             _default()
         } else {
-
             $('.stages__item').removeAttr('style')
         }
     });
