@@ -35,7 +35,7 @@ var isFocus = function() {
     $(fieldEl).on('blur', function() {
         value = $(this).val();
         if (value.length == 0) $(this).closest(groupEl)
-            $(this).closest(groupEl).removeClass(onfocusClass);
+        $(this).closest(groupEl).removeClass(onfocusClass);
         if (value.length > 0) $(this).closest(groupEl).addClass(onfocusClass);
     });
 }
@@ -85,7 +85,10 @@ $(function() {
         }
     });
 
-    $('.reviews__list').slick()
+    $('.reviews__list').slick({
+        slidesToShow: 1,
+        adaptiveHeight: true
+    })
     isFocus()
 
     $('.year').text(new Date().getFullYear())

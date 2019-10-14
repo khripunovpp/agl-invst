@@ -1,10 +1,14 @@
 @import "bourbon"
 
 @media only screen and (min-width : 992px)
-	.w-page
 	body
 		font-size: 16px
 		line-height: 24px
+
+	h2
+		font-size: 63px
+		line-height: 77px
+
 	.header
 		padding: 20px 0 0
 		position: relative
@@ -389,9 +393,60 @@
 			max-width: 500px
 			margin: 30px auto 0
 
-	h2
-		font-size: 63px
-		line-height: 77px
+	.reviews
+		&__inner
+			max-width: 920px
+		&__item
+			padding-top: 110px
+			&-inner
+				padding: 140px 110px 70px
+			&-pic
+				width: 160px
+				height: 160px
+				margin-left: -80px
+				top: -80px
+				img
+					max-width: none
+					width: 230px
+					top: -40px
+					left: -40px
+			&-text
+				font-size: 24px
+				line-height: 30px
+				margin-bottom: 40px
+				position: relative
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					width: 36px
+					height: 27px
+					background-image: url(../img/reviews-quote.png)
+				&::before
+					top: -20px
+					left: -50px
+				&::after
+					right: -50px
+					bottom: -20px
+					transform: scale(-1,-1)
+			&-name
+				font-size: 24px
+				line-height: 30px	
+		&__list
+			padding-bottom: 70px
+			.slick-prev,
+			.slick-next
+				bottom: calc(50% - 31px)
+			.slick-prev
+				right: auto
+				margin-right: 0
+				left: -50px
+			.slick-next
+				left: auto
+				margin-left: 0
+				right: -50px
+		&__btn
+			display: block
 
 @media only screen and (min-width : 1250px)
 	.header
@@ -404,6 +459,13 @@
 			
 	.nav
 		display: block
+
+	.reviews
+		&__list
+			.slick-prev
+				left: -100px
+			.slick-next
+				right: -100px
 
 @media only screen and (min-width : 1750px)
 	.header
